@@ -1,0 +1,121 @@
+<div class="inputs-container">
+  <div class="default-inputs">
+    <h2>Default Inputs</h2>
+    <form>
+      <input type="text" placeholder="Project" />
+      <div>
+        <input type="text" placeholder="Nick" />
+        <input type="text" placeholder="Last Name" />
+      </div>
+      <input type="text" placeholder="Password" />
+      <input
+        type="text"
+        placeholder="Rectangle border"
+        [ngStyle]="{ borderRadius: '4px' }"
+      />
+      <input
+        type="text"
+        placeholder="Semi-round border"
+        [ngStyle]="{ borderRadius: '8px' }"
+      />
+      <input
+        type="text"
+        placeholder="Rounded border"
+        [ngStyle]="{ borderRadius: '10px' }"
+      />
+      <input type="text" placeholder="Disabled input" disabled />
+      <textarea rows="5" placeholder="Text Area"></textarea>
+      <input
+        type="text"
+        placeholder="Small Input"
+        [ngStyle]="{ height: '35px' }"
+      />
+      <input type="text" placeholder="Medium Input" />
+      <input
+        type="text"
+        placeholder="Large Input"
+        [ngStyle]="{ height: '55px' }"
+      />
+    </form>
+  </div>
+  <div class="select">
+    <h2>Select</h2>
+    <div>
+      <mat-form-field >
+        <mat-select value="option1">
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="validation-states">
+    <h2>Validation States</h2>
+    <div>
+      <input type="text" placeholder="Input with Info" />
+      <input
+        type="text"
+        placeholder="Warning Input"
+        [ngStyle]="{ border: '1px solid green' }"
+      />
+      <input
+        type="text"
+        placeholder="Danger Input"
+        [ngStyle]="{ border: '1px solid orange' }"
+      />
+      <input
+        type="text"
+        placeholder="Input with Primary"
+        [ngStyle]="{ border: '1px solid blue' }"
+      />
+
+      <div class="checkboxs">
+        <input type="checkbox" />
+        <label>Success Checkbox</label>
+        <input type="checkbox" />
+        <label>Warning Checkbox</label>
+        <input type="checkbox" />
+        <label>Danger Checkbox</label>
+      </div>
+    </div>
+  </div>
+  <div class="checkbox-radios">
+    <h2>Checkboxes & Radios</h2>
+    <div>
+      <div>
+        <div>
+          <input type="checkbox" />
+          <label>Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Checkbox 2</label>
+        </div>
+      </div>
+      <div>
+        <div>
+          <input type="radio" name="radio"/>
+          <label>Radio 1</label>
+        </div>
+        <div>
+          <input type="radio" name="radio"/>
+          <label>Radio 2</label>
+        </div>
+        <div>
+          <input type="radio" name="radio"/>
+          <label>Radio 3</label>
+        </div>
+      </div>
+      <div>
+        <div>
+          <input type="checkbox" disabled/>
+          <label>Disabled Checkbox</label>
+        </div>
+        <div>
+          <input type="radio" disabled/>
+          <label>Disabled Radio</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

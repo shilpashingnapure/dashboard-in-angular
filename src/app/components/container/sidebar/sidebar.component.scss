@@ -1,0 +1,24 @@
+.active {
+    border-right: 5px solid #f55252;
+    background: hsla(0,0%,87.8%,.4);
+    transition: left .35s ease;
+}
+
+
+.logo{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    padding:1rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.logo h2{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+

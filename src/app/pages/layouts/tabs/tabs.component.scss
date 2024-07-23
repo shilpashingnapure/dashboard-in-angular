@@ -1,0 +1,29 @@
+.tabs-container{
+    display: flex;
+    height: 21rem;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+
+
+.tab-card{
+    padding-bottom: 20px;
+    flex : 0 0 48.6%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+
+::ng-deep p{
+    padding:20px;
+    font-size: 14px;
+    color: #424242;
+    line-height: 1.50rem;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+

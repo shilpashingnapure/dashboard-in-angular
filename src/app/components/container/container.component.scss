@@ -1,0 +1,28 @@
+.body-container{
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: 4rem 100vh;
+    font-size: 1.6rem;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.sidebar {
+    position: sticky;
+    top:0;
+    left:0;
+    grid-area:1/1/-1/2;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(135deg, rgba(47 , 62 , 160 , .9) ,rgba(174, 52, 45 , .9)) , url('../../../assets/sidebar-bg.jpg') ;
+}
+
+.content{
+    grid-area: 2/2/-1/-1;
+    padding: 30px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    background-color: #fafafa;
+
+}

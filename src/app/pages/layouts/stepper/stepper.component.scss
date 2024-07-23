@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.warpper{
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+::ng-deep .mat-step-header[aria-selected="true"] .mat-step-icon-selected {
+    background-color: #fff;
+    border: 1px solid #6101ee;
+    color: #6101ee;
+}
+/* 
+::ng-deep .mat-step-header[aria-selected="true"]::before , ::ng-deep .mat-step-header[aria-selected="true"]::after ,
+::ng-deep .mat-step-header[aria-selected="true"] + .mat-stepper-horizontal-line {
+    border-top-color: yellow;
+}   
+::ng-deep .mat-step-header[aria-selected="true"] + .mat-stepper-horizontal-line + .mat-step-header[aria-selected='false']::before{
+    border-top-color: yellow;
+} */
+
+
+.steppers-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap:30px;
+
+    & > div{
+        border-radius: 3px;
+    background-color: #fff;
+    box-shadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    }
+
+    
+
+    & p{
+        font-size: 15px;
+        text-align: center;
+        color : #424242;
+        margin: 15px 0;
+    }
+    & input{
+        width: 100%;
+        height: 50px;
+        margin: 15px 0;
+        padding: 0 7px;
+        
+    }
+    & button{
+        margin: 0 40%;
+        
+    }
+    
+}
+
+button{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+::ng-deep .full-stepper{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 5px;
+}
+
+
+::ng-deep .mat-vertical-stepper-content {
+    margin-left: 40% !important;
+}

@@ -1,0 +1,39 @@
+nav{
+    position: sticky;
+    top:0;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    box-shadow: -8px 8px 14px 0 rgba(25,42,70,.11);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav > div{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+nav .profile {
+    gap : 24px;
+}
+
+.profile > p > span{
+    display: block;
+    font-size: 1.1rem;
+    text-align: right;
+    color: rgba(0,0,0,.5);
+    font-weight: 300;
+}
+.profile > p > span:last-child{
+    color : #bdbdbd;
+    font-size: .9rem;
+}
+
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        {{title}}
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul>
+        <li *ngFor="let name of linksName ; let i = index">
+            <a routerLink="{{links[i]}}" routerLinkActive="active" >{{name}}</a>
+        </li>
+    </ul>
+</mat-expansion-panel>

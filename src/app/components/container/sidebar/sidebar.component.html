@@ -1,0 +1,42 @@
+
+<div>
+    <div class="logo">
+        <img src="https://demos.pixinvent.com/apex-angular-admin-template/demo-1/assets/img/logo.png" />
+        <h2>Apex</h2>
+    </div>
+<mat-accordion class="sidebar-container" >
+    <mat-expansion-panel hideToggle routerLinkActive="active" routerLink="/dashboard">
+        <mat-expansion-panel-header>
+
+            <mat-panel-title>
+                <a [ngStyle]="{color : '#fff'}">Dashboard</a>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <app-accordion [links]="['layout/stepper' , 'layout/lists' ,'layout/accordion' , 'layout/tabs']" 
+             [linksName]="['stepper' , 'List' , 'Accordion' , 'Tabs']"
+             [title] = "'layout'" >
+    </app-accordion>
+    <app-accordion [links]="['forms/inputs' , 'forms/layout' ,'forms/buttons','forms/datepicker']" 
+             [linksName]="['Forms Inputs' , 'Forms Layout' , 'Buttons' ,'DatePicker']"
+             [title] = "'Forms'">
+    </app-accordion>
+    <app-accordion [links]="['input' , 'form' ,'group form','date picker']" 
+             [linksName]="['Grid' , 'Icons' , 'Typography' ,'DatePicker']"
+             [title] = "'UI Features'">
+    </app-accordion>
+    <app-accordion [links]="['input' , 'form' ,'group form','tooltip']" 
+             [linksName]="['Dilog' , 'Popover' , 'Toastr' ,'Tooltip']"
+             [title] = "'Model & Overlays'">
+    </app-accordion>
+    <app-accordion [links]="['input' , 'form' ,'group form','rest']" 
+             [linksName]="['Login' , 'Register' , 'Request Password' ,'Reset Password']"
+             [title] = "'Auth'">
+    </app-accordion>
+</mat-accordion>
+</div>
+   
+
+
+
+

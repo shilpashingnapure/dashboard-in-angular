@@ -1,0 +1,123 @@
+<!-- horizontal steepper one -->
+<div class="container">
+  <div class="warpper">
+    <mat-horizontal-stepper
+      labelPosition="bottom"
+      [@.disabled]="true"
+      class="full-stepper"
+    >
+      <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+      </ng-template>
+
+      <mat-step label="First step" state="done">
+        <h3>Step content #1</h3>
+        <div>
+          <button mat-button matStepperPrevious class="btn-disable">Back</button>
+          <button mat-button matStepperNext class="btn-disable">Next</button>
+        </div>
+      </mat-step>
+      <mat-step label="Second step" state="done">
+        <h3>Step content #2</h3>
+        <div>
+          <button mat-button matStepperPrevious class="btn-disable">Back</button>
+          <button mat-button matStepperNext class="btn-disable">Next</button>
+        </div>
+      </mat-step>
+      <mat-step label="Third step" state="done">
+        <h3>Step content #3</h3>
+        <div>
+          <button mat-button matStepperPrevious class="btn-disable">Back</button>
+          <button mat-button matStepperNext class="btn-disable">Next</button>
+        </div>
+      </mat-step>
+      <mat-step label="Fourth step" state="done">
+        <h3>Step content #4</h3>
+        <div>
+          <button mat-button matStepperPrevious class="btn-disable">Back</button>
+          <button mat-button matStepperNext class="btn-disable">Next</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
+
+  <div class="steppers-container">
+    <div>
+      <mat-horizontal-stepper labelPosition="bottom" [@.disabled]="true">
+        <ng-template matStepperIcon="done">
+          <mat-icon>done</mat-icon>
+        </ng-template>
+
+        <mat-step label="First step" state="done">
+          <p>
+            Lorizzle ipsum dolizzle stuff fizzle, consectetuer adipiscing break
+            it down. Nullizzle sapien velizzle, my shizz pimpin', shizzle my
+            nizzle crocodizzle shut the shizzle up, gravida vizzle, dang.
+          </p>
+          <input type="text" placeholder="Enter your name" />
+          <button mat-button matStepperNext class="btn-disable">Next</button>
+        </mat-step>
+        <mat-step label="Second step" state="done">
+          <p>
+            Pellentesque we gonna chung tortor. Sizzle pizzle. Fizzle izzle
+            dolor dapibus fo shizzle mah nizzle fo rizzle, mah home g-dizzle
+            tempus tempor. Maurizzle cool nibh owned turpizzle. My shizz fo
+            shizzle tortor.
+          </p>
+          <input type="text" />
+          <div>
+            <button mat-button matStepperPrevious class="btn-disable">Prev</button>
+            <button mat-button matStepperNext class="btn-disable">Next</button>
+          </div>
+        </mat-step>
+        <mat-step label="Third step" state="done">
+          <p>
+            Things boom shackalack rhoncus yo. In fo shizzle my nizzle gangsta
+            platea dictumst. Check it out pot.
+          </p>
+          <input type="text" />
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>confirm</button>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </div>
+    <div>
+      <mat-vertical-stepper labelPosition="right" [@.disabled]="true">
+        <ng-template matStepperIcon="done">
+          <mat-icon>done</mat-icon>
+        </ng-template>
+
+        <mat-step label="First step" state="done">
+          <h3>Step content #1</h3>
+          <div>
+            <button mat-button matStepperPrevious class="btn-disable">Back</button>
+            <button mat-button matStepperNext class="btn-disable">Next</button>
+          </div>
+        </mat-step>
+        <mat-step label="Second step" state="done">
+          <h3>Step content #2</h3>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </mat-step>
+        <mat-step label="Third step" state="done">
+          <h3>Step content #3</h3>
+          <div>
+            <button mat-button matStepperPrevious class="btn-disable">Back</button>
+            <button mat-button matStepperNext class="btn-disable">Next</button>
+          </div>
+        </mat-step>
+        <mat-step label="Fourth step" state="done">
+          <h3>Step content #4</h3>
+          <div>
+            <button mat-button matStepperPrevious class="btn-disable">Back</button>
+            <button mat-button matStepperNext class="btn-disable">Next</button>
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    </div>
+  </div>
+</div>
